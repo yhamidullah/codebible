@@ -4,7 +4,8 @@ import os
 
 def remove_files_by_time(path, n=1, last=False, ext=""):
     """
-    :param path:
+    Remove files by their time of creation
+    :param path: path to folder
     :param n: number of files
     :param last: True means -> newest files (last created)
                  False means -> oldest files (first created)
