@@ -15,9 +15,6 @@ def rename_files(path, subdirname, files, indexe, ext=".jpg"):
         :return -> None
         :0 -> subfolder name. files will take subfolder name. (0 for subfold1 and 1 for subfold2) 
     """   
-    # print('path 2 subfolder',path) # path to subfolder
-    # print('subfold name',subdirname) # sub folder
-    # print('files',files) # path to files
     absname = os.path.join(path,str(subdirname))
     newname = os.path.join(str(subdirname)+"_"+str(indexe)+ext)
     os.rename(files, os.path.join(absname, newname))
